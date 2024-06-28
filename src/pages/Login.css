@@ -1,0 +1,57 @@
+/* Estilos específicos para el componente Login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: '100%';
+    border-radius: 10px;
+    
+  }
+  
+  .login-card {
+    background-color: #ffffff; /* Color blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  h2 {
+    color: #000000; /* Color negro */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000; /* Color negro */
+  }
+  
+  input {
+    display: block;
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #43aa34; /* Color verde */
+    color: #43aa34; /* Color blanco */
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #388b2c; /* Color verde oscuro para el hover */
+    color: #ffffff; /* Color blanco */
+  }
+  
