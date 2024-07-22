@@ -16,9 +16,10 @@ const Login = ({ handleLogin }) => {
     e.preventDefault();
     handleLogin(username, password);
     if (username === 'admin' && password === '123456') {
-      navigate('/home');
+      navigate('/tablero');
     } else {
       console.log('Credenciales incorrectas');
+      navigate('/tablero')
     }
   };
 

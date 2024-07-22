@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './pages/Login';
 import Home from './pages/Home';
+import Settings from './pages/Configuraciones';
+import Dashboard from './pages/Tablero';
+import Profile from './pages/Perfil';
+import Asistencias from './pages/Asistencia';
+import Tasks from './pages/Tareas';
+import Reports from './pages/Informes';
+import Grades from './pages/Calificaciones';
+import ChatPage from './pages/Comunicacion';
 
 
 const App = () => {
@@ -18,10 +26,15 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login handleLogin={handleLogin} />} />
-        <Route path="/home" element={
-          isAuthenticated ? <Home /> : <Navigate to="/" />
-        } />
+        <Route path="/" element={<Login handleLogin={handleLogin}/>} />
+        <Route path="/tablero" element={<Home />} />
+        <Route path="/asistencias" element={<Asistencias />} />
+        <Route path="/tareas" element={<Tasks />} />
+        <Route path="/informes" element={< Reports/>} />
+        <Route path="/calificaciones" element={< Grades/>} />
+        <Route path="/contacto" element={< ChatPage/>} />
+        <Route path="/Perfil" element={< Profile/>} />
+        <Route path="/settings" element={<Settings />} />
       </Routes>
     </Router>
   );

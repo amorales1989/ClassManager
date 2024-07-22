@@ -1,12 +1,18 @@
 import * as React from 'react';
 import SwipeableTemporaryDrawer from '../components/sidebar';
+import Dashboard from './Tablero';
+import NavBar from '../components/Navbar';
 
 const Home = () => {
   return (
-    <div>
-      <SwipeableTemporaryDrawer />
-      {/* Other components and content for the Home page */}
-    </div>
+    <>
+      <NavBar />
+      <div>
+        <SwipeableTemporaryDrawer />
+        <Dashboard />
+        {/* Other components and content for the Home page */}
+      </div>
+    </>
   );
 };
 
