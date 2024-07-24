@@ -58,18 +58,18 @@
     font-size: 18px;
     letter-spacing: 1px;
     text-decoration: none;
-    color: #725AC1;
+    color: #2a1083;
     background: transparent;
     cursor: pointer;
     transition: ease-out 0.5s;
-    border: 2px solid #725AC1;
+    border: 2px solid #2a1083;
     border-radius: 10px;
-    box-shadow: inset 0 0 0 0 #725AC1;
+    box-shadow: inset 0 0 0 0 #2a1083;
   }
   
   button:hover {
     color: white;
-    box-shadow: inset 0 -100px 0 0 #725AC1;
+    box-shadow: inset 0 -100px 0 0 #2a1083;
   }
   
   button:active {

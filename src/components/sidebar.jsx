@@ -23,13 +23,11 @@ import NavBar from './Navbar';
 
 export default function PermanentDrawer() {
   const list = (
-    <>
-    
+    <div >
       <h2 style={{ display: 'flex', justifyContent: 'center', color: '#ffffff' }}>Class-Manager</h2>
       <Box
         sx={{
           width: 250,
-          paddingTop: 1,
           backgroundColor: '#121621',
           color: '#ffffff',
         }}
@@ -77,7 +75,7 @@ export default function PermanentDrawer() {
           ))}
         </List>
       </Box>
-    </>
+    </div>
   );
 
   return (

@@ -26,7 +26,7 @@ const Login = ({ handleLogin }) => {
   return (
     <div className="login-container" style={{ background: 'black' }}>
       <div className="login-card">
-        <img src="/vite.svg" alt="Logo" className="LogoIndulac3.0" />
+        <img src="/logoSchool.png" alt="Logo" style={{ maxWidth: '40%', height: 'auto' }}  className="LogoIndulac3.0" />
         <h2>Login</h2>
         <form onSubmit={onSubmit}>
           <label htmlFor="username">Usuario:</label>

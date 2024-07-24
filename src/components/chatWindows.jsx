@@ -41,19 +41,26 @@ const ChatWindow = ({ user }) => {
         </List>
       </Box>
       <Box sx={{ display: 'flex', p: 2, borderTop: '1px solid #ddd' }}>
-        <TextField
-        style={{background:'white'}} 
-          fullWidth
-          variant="outlined"
-          placeholder="Escribe un mensaje"
-          value={newMessage}
-          onChange={(e) => setNewMessage(e.target.value)}
-          onKeyPress={(e) => {
-            if (e.key === 'Enter') {
-              handleSend();
-            }
-          }}
-        />
+      <TextField  
+            style={{  
+                background: 'white',    
+                height: '55px', // Altura similar a un textarea  
+                borderRadius: '5px', // Bordes redondeados  
+                boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.2)', // Sombra  
+            }}  
+            fullWidth  
+            variant="outlined"  
+            placeholder="Escribe un mensaje"  
+            value={newMessage}  
+            onChange={(e) => setNewMessage(e.target.value)}  
+            onKeyPress={(e) => {  
+                if (e.key === 'Enter') {  
+                    handleSend();  
+                }  
+            }}  
+            multiline // Esto convierte el TextField en un área de texto  
+            rows={1} // Especifica el número de filas visible  
+        /> 
         <Button variant="contained" color="primary" onClick={handleSend} sx={{ ml: 1 }}>
           Enviar
         </Button>
