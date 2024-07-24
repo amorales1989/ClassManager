@@ -45,7 +45,7 @@ const Login = ({ handleLogin }) => {
             onChange={(e) => setPassword(e.target.value)} // No es necesario modificar la contraseña
             required
           />
-          <Button type="submit" variant="contained">Iniciar Sesión</Button>
+          <Button type="submit" className='button'>Iniciar Sesión</Button>
         </form>
       </div>
     </div>

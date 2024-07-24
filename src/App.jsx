@@ -10,6 +10,8 @@ import Tasks from './pages/Tareas';
 import Reports from './pages/Informes';
 import Grades from './pages/Calificaciones';
 import ChatPage from './pages/Comunicacion';
+import Teachers from './pages/Informes maestros';
+import Courses from './pages/Informes cursos';
 
 
 const App = () => {
@@ -31,6 +33,8 @@ const App = () => {
         <Route path="/asistencias" element={<Asistencias />} />
         <Route path="/tareas" element={<Tasks />} />
         <Route path="/informes" element={< Reports/>} />
+        <Route path="/maestros" element={< Teachers/>} />
+        <Route path="/cursos" element={< Courses/>} />
         <Route path="/calificaciones" element={< Grades/>} />
         <Route path="/contacto" element={< ChatPage/>} />
         <Route path="/Perfil" element={< Profile/>} />

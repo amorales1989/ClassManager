@@ -31,27 +31,48 @@
   input {
     display: block;
     width: 90%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: #ffffff;
-    color: #000000;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+  }
+  
+  input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
   }
   
   button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #43aa34; /* Color verde */
-    color: #43aa34; /* Color blanco */
+    position: relative;
+    display: inline-block;
+    
+    margin-top: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
     cursor: pointer;
-    font-size: 16px;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
   }
   
   button:hover {
-    background-color: #388b2c; /* Color verde oscuro para el hover */
-    color: #ffffff; /* Color blanco */
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+  }
+  
+  button:active {
+    transform: scale(0.9);
   }
   

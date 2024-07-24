@@ -16,10 +16,15 @@ import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 import PersonIcon from '@mui/icons-material/Person';
+import SendIcon from '@mui/icons-material/Send';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import ClassIcon from '@mui/icons-material/Class';
+import NavBar from './Navbar';
 
 export default function PermanentDrawer() {
   const list = (
     <>
+    
       <h2 style={{ display: 'flex', justifyContent: 'center', color: '#ffffff' }}>Class-Manager</h2>
       <Box
         sx={{
@@ -30,8 +35,8 @@ export default function PermanentDrawer() {
         }}
         role="presentation"
       >
-        <Box sx={{ display: 'flex', justifyContent: 'center', marginBottom: 5 }}>
-          <img src="/vite.svg" alt="Logo" style={{ maxWidth: '100%', height: 'auto' }} />
+        <Box sx={{ display: 'flex', justifyContent: 'center', marginBottom: 5, background: 'white' }}>
+          <img src="/logoSchool.png" alt="Logo" style={{ maxWidth: '50%', height: 'auto' }} />
         </Box>
         <List>
           {[
@@ -40,7 +45,9 @@ export default function PermanentDrawer() {
             { text: 'Calificaciones', icon: <TextSnippetIcon />, link: '/calificaciones' },
             { text: 'Informes', icon: <AssessmentIcon />, link: '/informes' },
             { text: 'Tareas', icon: <FormatListBulletedIcon />, link: '/tareas' },
-            { text: 'Contacto', icon: <FormatListBulletedIcon />, link: '/contacto' },
+            { text: 'Maestros', icon: <PeopleAltIcon />, link: '/maestros' },
+            { text: 'Cursos', icon: <ClassIcon />, link: '/cursos' },
+            { text: 'Contacto', icon: <SendIcon />, link: '/contacto' },
           ].map((item) => (
             <ListItem key={item.text} disablePadding>
               <ListItemButton component={Link} to={item.link}>
@@ -74,6 +81,7 @@ export default function PermanentDrawer() {
   );
 
   return (
+    
     <Drawer
       variant="permanent"
       anchor="left"
@@ -84,6 +92,7 @@ export default function PermanentDrawer() {
         },
       }}
     >
+      <NavBar/>
       {list}
     </Drawer>
   );
