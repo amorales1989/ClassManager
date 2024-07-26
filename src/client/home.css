@@ -1,0 +1,78 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  width: auto;
+}
+
+.icon {
+  font-size: 40px;
+  margin: auto;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.card-name {
+  margin-top: auto;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.balance-card {
+  grid-column: span 2; /* Ocupa el ancho de dos columnas */
+  height: 100px;
+  background-color: #d0f0c0; /* Color verde claro */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.balance-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: column;
+  flex-direction: column;
+}
+
+.balance-title {
+  font-size: 29px;
+  font-weight: 300;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-family: auto;
+}
+
+.balance-amount {
+  font-size: 42px;
+  color: #797eda; /* Color rojo para resaltar */
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.balance-date {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: auto;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-family: auto;
+}

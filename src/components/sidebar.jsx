@@ -33,16 +33,16 @@ export default function PermanentDrawer() {
         }}
         role="presentation"
       >
-        <Box sx={{ display: 'flex', justifyContent: 'center', marginBottom: 5, background: 'white' }}>
-          <img src="/logoSchool.png" alt="Logo" style={{ maxWidth: '50%', height: 'auto' }} />
+        <Box sx={{ display: 'flex', justifyContent: 'center', marginBottom: 0, background: 'white', marginTop: 0, height: 100 }}>
+          <img src="/logoSchool.png" alt="Logo" style={{ maxWidth: '100%', height: 'auto' }} />
         </Box>
         <List>
           {[
             { text: 'Tablero', icon: <BackupTableIcon />, link: '/tablero' },
             { text: 'Asistencias', icon: <AssignmentTurnedInIcon />, link: '/asistencias' },
-            { text: 'Calificaciones', icon: <TextSnippetIcon />, link: '/calificaciones' },
+            //{ text: 'Calificaciones', icon: <TextSnippetIcon />, link: '/calificaciones' },
             { text: 'Informes', icon: <AssessmentIcon />, link: '/informes' },
-            { text: 'Tareas', icon: <FormatListBulletedIcon />, link: '/tareas' },
+           // { text: 'Tareas', icon: <FormatListBulletedIcon />, link: '/tareas' },
             { text: 'Maestros', icon: <PeopleAltIcon />, link: '/maestros' },
             { text: 'Cursos', icon: <ClassIcon />, link: '/cursos' },
             { text: 'Contacto', icon: <SendIcon />, link: '/contacto' },

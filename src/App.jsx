@@ -12,6 +12,7 @@ import Grades from './pages/Calificaciones';
 import ChatPage from './pages/Comunicacion';
 import Teachers from './pages/Informes maestros';
 import Courses from './pages/Informes cursos';
+import HomeClient from './client/home';
 
 
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/contacto" element={< ChatPage/>} />
         <Route path="/Perfil" element={< Profile/>} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/Home" element={<HomeClient />} />
       </Routes>
     </Router>
   );
